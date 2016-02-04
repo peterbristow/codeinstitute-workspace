@@ -1,5 +1,5 @@
 # 02: Session Notes #
-##### Date: 10-02-2015 00:00-00:00 #####
+##### Date: 10-02-2015 09:00-10:00 #####
 -------------------------------------------------
 
 
@@ -11,7 +11,7 @@
 4. Which is more correct in page layout: using display or float with positioning?
 5. Can you recommend a good website to see professionally correct fluid layouts?
 6. Is it more professional to use one stylesheet with media queries and use the mobile first method?
-7. What media screen sizes do the professionals use in media queries (Mobile <320 / Tablet/Laptops <768 / Desktop >1200 )?
+7. What media screen sizes do the professionals use in media queries (Mobile <320 /  Tablet/Laptops <768 / Desktop >1200 )?
 8. What is your opinion on showing the same content on all devices?
 
 
@@ -26,5 +26,7 @@ Specific notes underneath each topic...
 
 
 ## Things to do for next session: ##
-
 1. Things here...
+
+
+

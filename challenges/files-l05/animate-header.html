@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css' />
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600|Dosis:400,800,700,600,500' rel='stylesheet' type='text/css'>
+
+<style>
+body {
+  animation-duration: 6s;
+  animation-name: bganimate;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+h2 { 
+	  animation-duration: 5s;
+  	 animation-name: explode;
+  	 animation-timing-function: ease;
+     animation-fill-mode: forwards;
+  	 font-family: 'Dosis', sans-serif;
+	   font-weight: 700;
+  	 text-align: center;
+     text-transform: uppercase;
+	}
+h3 { 
+     animation-duration: 7s;
+     animation-name: subhead;
+     animation-fill-mode: forwards;
+     font-family: 'Dosis', sans-serif;
+     font-weight: 700;
+     text-align: center;
+     margin-top: 5px;
+  }
+
+
+@keyframes explode {
+  0% {
+    font-size: 10%;
+    opacity: 0;
+    color: grey;
+  }
+  100% {
+    font-size: 4em;
+    color: white;
+    opacity: 1;
+  }
+}
+@keyframes subhead {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    color: white;
+    opacity: 1;
+  }
+}
+@keyframes bganimate {
+  0% {
+    background-color: #54403C;
+  }
+  100% {
+    background-color: #31c5c7;
+  }
+}
+.container { width: 80%; margin-left:auto;margin-right: auto; margin-top: 10em;}
+</style>
+	<body>
+		 
+	<div class="container">   
+	   <h2>Code Institute</h2>
+     <h3>coming to a place near you soon</h3>
+  </div>
+	</body>
+</html>
