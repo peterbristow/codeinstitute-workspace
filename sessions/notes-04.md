@@ -1,4 +1,4 @@
-# 04: Session Notes #
+# 03: Session Notes #
 ##### Date: 00-00-2015 00:00-00:00 #####
 -------------------------------------------------
 
@@ -21,3 +21,6 @@ Specific notes underneath each topic...
 ## Things to do for next session: ##
 
 1. Things here...
+
+
+

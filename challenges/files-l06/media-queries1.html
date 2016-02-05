@@ -5,13 +5,12 @@
 		<title>Box Model</title>
 		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 		<style type="text/css">
-		body{
+		body {
 			background-image: url(img/code.jpg);
 			background-size: cover;
 		}
 
-			#container
-			{
+			#container {
 				margin-right: auto; 
 				margin-left: auto;
 				position: relative;		
@@ -22,7 +21,7 @@
 				font-size: 0; 
 				
 			}
-			.box{
+			.box {
 				position: relative;		
 				width: 100%;
 				background-color: #81BBC9;
@@ -34,7 +33,7 @@
 				padding: 30px 0;
 			}
 								
-			.sidebar{
+			.sidebar {
 				box-sizing: border-box;
 				display: inline-block;
 				width: 470px;
@@ -43,7 +42,7 @@
 				padding-right: 10px;
 			}
 
-			.content{
+			.content {
 				box-sizing: border-box;
 				display: inline-block;
 				width: 470px;
@@ -52,19 +51,27 @@
 				padding-right: 10px;
 
 			}
-			#toTopRight{
+			#toTopRight {
 				position: absolute; 	/* Absolute Link */
 				bottom: 0;				/* Offset however we wish*/
 				right: -80px;
 			}
-			#toTopLeft{
+			#toTopLeft {
 				position: absolute; 	/* Absolute Link */
 				bottom: 0;				/* Offset however we wish*/
 				left: -80px;
 			}
-			p{
+			p {
 				padding-bottom: 50px;
 			}
+			p:first-line {
+				font-size: 30px;
+			}
+			p:first-letter {
+				font-size: 50px;
+				color: #999;
+			}
+			
 			/*#header{
 				top: 0px;
 				right: 0px;
@@ -72,6 +79,26 @@
 				border: 2px dashed #000;
 				z-index: 100;	
 			}*/
+			
+			@media screen and (min-width: 400px){   /* min-width for desktop */
+	         	p {
+	                 font-size: 20px;
+	 
+	            }
+	            .box {
+	                  text-align: left;
+	                  background-color:#eee;
+	                  border-color: white;
+	            }
+   			}
+   			
+   			@media screen and (min-width: 1000px) {
+   				.box {
+   					border: 1px solid lighblue;
+   					color: #fff;
+   				}
+   			}
+
 			
 		</style>
 	</head>

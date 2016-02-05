@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Box Model</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+		
+			div {
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+		
+			#container {
+				width: 960px;	/*to center an element it must have a width smaller than its container*/
+				margin-left: auto;
+				margin-right: auto;
+				border-radius: 10px;
+				padding: 5px;
+				font-size: 0;
+			}
+			.box {
+				display: block;
+				width: 100%;
+				height: 100px;
+				background-color: #81BBC9;
+				margin-bottom: 5px;
+				border-radius: 10px;
+				font-size: 16px;
+			}
+			h1, h2 {
+				margin: 0px;
+				padding: 0px;
+				padding-top: 32px;
+				font-family: Roboto, sans-serif;
+				text-align: center;
+  			}
+  			#sidebar, #content {
+  				display: inline-block;
+  				height: 320px;
+  				padding-left: 40px;
+  				padding-right: 40px;
+  				border: 5px solid green;
+  				text-align: justify;
+  			}
+  			#sidebar {
+  				margin-right: 5px;
+  				width: 472px;
+  			}
+  			#content {
+  				width: 473px;
+  			}
+
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div class="box"><h1>Header</h1></div>
+			<div id="sidebar" class="box">
+				<h2>Sidebar</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed tristique purus. Nam cursus facilisis tellus ut cursus. Morbi sit amet eros ligula. Sed id feugiat tortor. Cras aliquam metus vel viverra mollis.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed tristique purus. Nam cursus facilisis tellus ut cursus. Morbi sit amet eros ligula. Sed id feugiat tortor. Cras aliquam metus vel viverra mollis.</p>
+			</div>
+			<div id="content" class="box">
+				<h2>Content</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed tristique purus. Nam cursus facilisis tellus ut cursus. Morbi sit amet eros ligula. Sed id feugiat tortor. Cras aliquam metus vel viverra mollis.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed tristique purus. Nam cursus facilisis tellus ut cursus. Morbi sit amet eros ligula. Sed id feugiat tortor. Cras aliquam metus vel viverra mollis.</p>
+			</div>
+			<div class="box"><h2>Footer</h2></div>
+		</div>
+	</body>
+</html>

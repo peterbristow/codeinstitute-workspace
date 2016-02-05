@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tables styled with Pseudos</title>
+		<style type="text/css">
+			tr th, tr td {
+				text-align: center;
+				border: 1px solid silver;
+				padding: 8px 10px;
+				width: 70px;
+				font-family: sans-serif;
+			}
+	
+			tr th, tr td:first-child {
+				background-color: lightblue;
+				border: 0px;
+				font-weight: bold;
+	
+			}
+	
+			tr:nth-child(2n) {
+				background-color: yellow;
+			}
+	
+		</style>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<th></th>
+				<th>Country</th>
+				<th>Price</th>
+				<th>Nutrition</th>
+				<th>Catagory</th>
+			</tr>
+			<tr>
+				<td>Spinach</td>
+				<td>America</td>
+				<td>28</td>
+				<td>90</td>
+				<td>Veg</td>
+			</tr>
+			<tr>
+				<td>Carrots</td>
+				<td>France</td>
+				<td>56</td>
+				<td>75</td>
+				<td>Veg</td>
+			</tr>
+			<tr>
+				<td>Broccoli</td>
+				<td>Bulgaria</td>
+				<td>12</td>
+				<td>70</td>
+				<td>Veg</td>
+			</tr>
+			<tr>
+				<td>Orange</td>
+				<td>Morocco</td>
+				<td>15</td>
+				<td>50</td>
+				<td>Fruit</td>
+			</tr>
+			<tr>
+				<td>Tangerine</td>
+				<td>Cyprus</td>
+				<td>12</td>
+				<td>25</td>
+				<td>Fruit</td>
+			</tr>
+			<tr>
+				<td>Melon</td>
+				<td>Sicily</td>
+				<td>24</td>
+				<td>60</td>
+				<td>Fruit</td>
+			</tr>
+			<tr>
+				<td>Rhubarb</td>
+				<td>Ireland</td>
+				<td>12</td>
+				<td>32</td>
+				<td>Veg</td>
+			</tr>
+		</table>
+	</body>
+</html>
