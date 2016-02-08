@@ -1,0 +1,91 @@
+*{
+	
+	margin:0;
+	padding:0;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	background: #4b4444;
+	font-family: 'Josefin Slab', Arial, sans-serif;
+	font-size: 13px;
+}
+.bmenu li:first-child a {
+
+	border-radius: 15px 15px 0px 0px;
+}
+.bmenu li:last-child a {
+
+	border-radius: 0px 0px 15px 15px;
+}
+.content {
+	margin: 0 3%;
+	width: 680px;
+}
+
+h1 {
+	margin: 0px;
+	padding: 20px;
+	font-size: 42px;
+	color: #fff;
+	text-align: left;
+	font-weight: 400;
+	text-align: left;
+}
+h1 span {
+	font-size: 22px;
+	color: #ddd;
+	padding-top: 10px;
+}
+
+
+
+.bmenu {
+	padding: 0px;
+	margin: 0 0 10px 0;
+	width: 55%;
+	text-transform: uppercase;
+	color: #fff;
+	list-style:none;
+}
+.bmenu li {
+	font-size: 150%;
+}
+
+.bmenu li a {
+
+	text-decoration: none;
+	white-space: nowrap;
+	display: block;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 2px rgba(71,80,23,0.3);
+	color: #fff;
+	padding: 5px 20px;
+	margin: 2px;
+	background: rgba(255,255,255,0.2);
+	letter-spacing: 10px;
+	transition: all 0.4s ease-in-out;
+}
+
+
+.bmenu:hover li a {
+	text-shadow: 0px 0px 10px #fff;
+	color: transparent;
+}
+.bmenu li a:hover {
+	background: transparent;
+	text-shadow: 1px 1px 10px rgba(71,80,23,0.6);
+	color: #c4d85a;
+}
+
+#pagename {
+
+	position: absolute;
+	bottom: 0;
+	padding: 20px;
+	font-size: 120%;
+	color: #c4d85a;
+	text-transform: uppercase;
+}
+

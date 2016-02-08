@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 8: CSS Page Transitions</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <style type="text/css">
+            #st-panel-1 {
+				background: url(images/aye.jpg) no-repeat;
+				background-position: 50% 50%;
+				display: block;
+				-moz-background-size: cover;
+				-webkit-background-size: cover;
+				background-size: cover;
+			}
+			#st-panel-2 {
+				background: url(images/mario.jpg) no-repeat;
+				background-position: 50% 50%;
+				display: block;
+				-moz-background-size: cover;
+				-webkit-background-size: cover;
+				background-size: cover;
+			}
+			#st-panel-3 {
+				background: url(images/carmelite.jpg) no-repeat;
+				background-position: 50% 50%;
+				display: block;
+				-moz-background-size: cover;
+				-webkit-background-size: cover;
+				background-size: cover;
+			}
+			#st-panel-4 {
+				background: url(images/hitman.jpg) no-repeat;
+				background-position: 50% 50%;
+				display: block;
+				-moz-background-size: cover;
+				-webkit-background-size: cover;
+				background-size: cover;
+			}
+			#st-panel-5 {
+				background: url(images/contact.jpg) no-repeat;
+				background-position: 50% 50%;
+				display: block;
+				-moz-background-size: cover;
+				-webkit-background-size: cover;
+				background-size: cover;
+			}
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+			<div class="st-container">
+                <input type="radio" name="radio-set" checked="checked" id="st-control-1"/>
+    			    <a href="#st-panel-1">About</a>
+    
+                <input type="radio" name="radio-set" id="st-control-2"/>
+        			<a href="#st-panel-2">Games</a>
+    
+                <input type="radio" name="radio-set" id="st-control-3"/>
+                    <a href="#st-panel-3">Illustrations</a>
+    
+                <input type="radio" name="radio-set" id="st-control-4"/>
+                    <a href="#st-panel-4">Character Design</a>
+    
+                <input type="radio" name="radio-set" id="st-control-5"/>
+                    <a href="#st-panel-5">Contact</a>
+
+    			<div class="st-scroll">
+                	<section class="st-panel st-color" id="st-panel-1">
+                		<h2>Eye Candy</h2>
+                		<P>
+                		    Check out the delights of this online scape, which is common known as our website.
+                		</P>
+                	</section>
+                
+                    <section class="st-panel" id="st-panel-2">
+                		<h2>Games</h2>
+                		<p>
+                		 	Art party readymade beard labore cosby sweater. 
+                		</p>
+                	</section>
+                
+                    <section class="st-panel st-color" id="st-panel-3">
+                		<h2>Illustrations</h2>
+                		<p>
+                			Sint aute occaecat id vice. Post-ironic godard.
+                		</p>
+                	</section>
+                
+                	<section class="st-panel st-color" id="st-panel-4">
+                		<h2>Character Design</h2>
+                		<p>
+                			Mixtape fap leggings art party, cosby sweater
+                		</p>
+                	</section>
+                
+                	<section class="st-panel" id="st-panel-5">
+                
+                		<h2>Contact Us</h2>
+                		<p>
+                			Fixie ad odd future polaroid nulla irony.
+                		</p>
+                	</section>
+                </div><!-- // st-scroll -->
+            </div><!-- // st-container -->
+		</div> <!-- // container -->
+    </body>
+</html>

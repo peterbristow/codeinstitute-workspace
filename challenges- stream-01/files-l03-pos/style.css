@@ -1,0 +1,9 @@
+p {
+  color: purple; /* element (type)*/
+}
+#red {
+  color: red; /* id*/
+}
+.blue {
+  color: blue; /* class*/
+}

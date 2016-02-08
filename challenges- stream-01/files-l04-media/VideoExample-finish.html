@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>HTML5 Video</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+		<style type="text/css">
+		body{
+			background-color: #000;
+			font-family: roboto;
+		}
+		header{
+			width: 600px;
+			margin: 0px auto;
+		}
+		h1{
+
+			color: #fff
+		}
+		.vid{
+			display: block;
+			margin: 80px auto 40px;
+		
+		}
+		.aud{
+			display: block;
+			margin: 0 auto;
+		}
+		</style>
+
+	</head>
+	<body>
+		<header><h1>HTML5 - Video</h1></header>
+		<video class="vid" controls="controls" poster="img/jazzcat.png" preload="auto">
+			<source src="video/MP4_Bunny.mp4"/>
+			<source src="video/OGV_Bunny.ogv"/>
+			<source src="video/WebM_Bunny.webm#t=10,20"/>
+			Your browser does not support the video tag.
+			<track src="video/sub.srt" kind="subtitles" srclang="en" label="English">
+	  		<track src="video/sub.vtt" kind="subtitles" srclang="no" label="Norwegian">
+		</video>
+	
+		<audio class="aud" controls="controls" preload="auto" loop autoplay>
+			<source src="audio/beats.ogg"/>
+			<source src="audio/tail.mp3"/>
+			Your browser does not support the audio tag.
+		</audio>
+		
+		
+		
+	</body>
+	
+</html>

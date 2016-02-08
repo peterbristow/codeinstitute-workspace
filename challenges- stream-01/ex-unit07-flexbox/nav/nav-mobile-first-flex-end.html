@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Flexbox</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+		nav{
+			font-family: roboto;
+			background-color: #eee;
+			margin: 30px auto;
+			width: 90%;
+			height: 500px;
+			display: flex;
+			flex-direction: column;
+			align-items:stretch;
+			/*flex-flow: row-reverse;*/
+			/*justify-content:flex-end;*/
+			/*justify-content:space-around;*/
+			/*align-items:flex-start;*/
+			border-radius: 10px;
+			list-style-type: none; /*Remove Bullets*/
+			padding: 0;	
+		}
+				
+		a{
+			text-decoration: none;
+			color: black;
+			flex:1;
+			height: 30px;
+			/*width:10%;*/
+			/*border:2px solid #000;*/
+			/*background-color: #81BBC9;*/
+			/*border-radius: 10px;*/
+			font-family: Dosis;
+			padding:20px;
+			text-align: center;
+			font-size: 2em;
+			border:1px solid black;
+
+		}
+		#logoNav{
+			font-size: 2em;
+			font-weight: bold;
+			}
+
+		@media screen and (min-width: 700px){
+			nav{
+				flex-flow: row;
+				align-items:baseline;
+				
+			}
+			a{
+				font-size: 1.3em;
+				border:none;
+
+			}
+			#logoNav{
+				flex:6;
+				text-align: left;
+			}
+		}
+
+		</style>
+</head>
+<body>
+
+	<nav>
+		
+		<a id="logoNav">CODE INSTITUTE</a>
+		<a href="#">Home</a>
+		<a href="#">Projects</a>
+		<a href="#">About</a>
+		<a href="#">Contact</a>
+		<a href="#">Photos</a>
+		
+
+	</nav>
+
+</body>
+</html>

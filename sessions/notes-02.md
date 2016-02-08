@@ -15,6 +15,10 @@
 8. Go over 'files-l05/hover-images' project together: See css comments in style.css.
 9. 'files-l05/transforms.html' - Why does the vertical page scroll bar flicker on hover out of box06?
 10. 'files-l05/css-prothole-images' - Please explain how this works. Also I don't understand the box-shadow part?
+11. Go over 'files-l06/css-page-transitions' project together. I don't understand the explanation given in the docs.
+12. Is there any reason  why doing this css would be of use?   html{margin: 0 auto;}
+13. Why do linked google fonts not display in any of the examples?
+14. 'files-l08/mobile-first-flexbox-semantics'.  Please critique this code and offer ideas to make everything completely fluid/responsive.
 
 
 ## Notes: ##
