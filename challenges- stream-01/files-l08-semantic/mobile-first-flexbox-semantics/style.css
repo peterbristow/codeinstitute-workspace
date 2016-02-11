@@ -1,0 +1,113 @@
+body {
+	background-color: #F5D76E;
+	padding: 0 5px;
+}
+nav {
+	font-family: 'Roboto', sans-serif;
+	margin: 30px auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	border-radius: 10px;
+	padding: 0;	
+}
+a {
+	text-decoration: none;
+	color: #fff;
+	flex: 1;
+	height: 30px;
+	font-family: Dosis;
+	padding: 20px 20px 20px 20px;
+	text-align: center;
+	font-size: 2em;
+	border-bottom: 1px solid #fff;
+
+}
+#logoNav {
+	font-size: 2em;
+	font-weight: bold;
+}
+#landing {
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+#landing-message {
+	padding: 0 30px;
+	margin-bottom: 40px;
+}
+#landing-message h2 {
+	font-family: 'Dosis', "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 2em;
+	text-align: center;
+	line-height: 1.5em;
+}
+#landing-graphic img {
+	width: 100%;
+}
+.cards {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+.card {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #ffffe5;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.card h2 {
+	font-size: 2em;
+	line-height: 1.8;
+}
+.card img {
+	width: 100%;
+}
+.card p {
+    font-family: dosis;
+    font-size: 1.4em;
+}
+@media screen and (min-width: 700px){
+	nav {
+		flex-direction: row;
+		align-items: baseline;
+	}
+	a {
+		border: 0px;
+		font-size: 1.4em;
+	}
+	#logoNav {
+		flex: 5;
+		text-align: left;
+	}
+	#landing {
+		width: 80%;
+		margin: 50px auto 70px;
+	}
+	#landing-message {
+		flex: 2;
+		padding: 0;
+		margin-bottom: 0;
+	}
+	#landing-message h2 {
+		text-align: center;
+		font-size: 2.7em;
+	}
+	#landing-graphic {
+		flex: 1;
+	}
+	.card{
+		width: 32%;
+	}
+}

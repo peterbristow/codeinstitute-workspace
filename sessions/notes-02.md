@@ -1,5 +1,5 @@
 # 02: Session Notes #
-##### Date: 10-02-2015 09:00-10:00 #####
+##### Date: 11-02-2016 09:00-10:00 #####
 -------------------------------------------------
 
 
@@ -29,13 +29,13 @@ Answer: Float when not using flexbox.
    
    <div class="my-row">
      <div>
-     Cell1
+       Cell1
      </div>
      <div>
-     Cell2
+       Cell2
      </div>
      <div>
-     Cell3
+       Cell3
      </div>
    </div>
 ```
@@ -68,17 +68,21 @@ Answer: Float when not using flexbox.
 
 
 ## Notes: ##
-See answers above.
 
-### Topics here... ###
+### Cloud 9 Fix ###
 
-Specific notes underneath each topic...
+If cant type text in terminal open new cloud 9 terminal - ALT T
 
+### CSS Selectors ###
 
+-  div > p  /*Selects any p element with an immediate parent element of div*/
+-  div + p  /*Selects all p elements immediately after and </div> element*/
+-  p ~ ul   /*Selects every ul preceeded by a p element*/
 
 
 ## Things to do for next session: ##
-1. Things here...
+
+1. Practice using css selectors in a mor mindful fashion.
 
 
 
