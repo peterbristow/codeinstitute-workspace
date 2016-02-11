@@ -10,9 +10,10 @@
       -->
       <style type="text/css">
 
-      body{
-         font-family: 'Roboto', sans-serif;
-      }
+         body{
+            font-family: 'Roboto', sans-serif;
+         }
+         
          #container{
             width: 550px;
             margin: auto;
@@ -32,12 +33,11 @@
             text-align: right;
             width: 100px;
             float: left;
-
          }
          input{
             width: 200px;
             border-radius: 5px;
-            padding: 6px 8px;
+            padding: 7px 8px;
          }
          .field{
             padding: 6px 8px;
@@ -63,7 +63,28 @@
    </head>
    <body>
       <div id="container">
-        
+         <fieldset>
+            <legend>Registration</legend>
+            <form id="form" method="POST" action="#">
+               <label class="field" for="FirstName">First name*: </label>
+               <input id="FirstName" type="text" name="FirstName" required="" placeholder="Enter your first name here"/>
+               
+               <label class="field" for="password">Password: </label>
+               <input id="password" type="password" name="password" placeholder="Minimum 8 characters"/>
+               
+               <label class="field" for="email">Email*: </label>
+               <input id="email" type="email" name="email" autofocus required="" placeholder="Enter your email here"/>
+               
+               <label class="field" for="tel">Tel: </label>
+               <input id="tel" type="tel" name="tel" placeholder="Enter your telephone number"/>
+               
+               <label class="field" for="website">Website: </label>
+               <input id="website" type="url" name="website" placeholder="Enter a website address here"/>
+               
+               <label class="field" for="submit"></label>
+               <input type="submit" name="submit" value="Submit"/>
+            </form>
+         </fieldset>
     </div>
    </body>
 
