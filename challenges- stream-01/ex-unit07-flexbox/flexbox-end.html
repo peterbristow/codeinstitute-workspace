@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Flexbox Model</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+		body{
+			font-family: roboto;
+		}
+		
+		#container
+		{
+			display: -webkit-flex;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: stretch;
+			align-items:stretch;
+			margin-right:auto; 
+			margin-left:auto;
+			width:80%;	
+			min-height: 400px;
+			background-color:#AA4639;
+			border-radius: 10px;
+			padding: 10px;
+		}
+		.box{
+			display: flex;
+			flex:1;
+			justify-content: center;
+		/*	align-items:center;*/
+			background-color: #81BBC9;
+			min-width: 200px;
+			margin:10px;
+			border-radius: 10px;
+			
+		}
+		#box4{
+			flex:1;
+		}
+		h2{
+			font-size: 3em;
+
+		}
+
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			
+			<div class="box"><h2>1</h2></div>
+			<div class="box"><h2>2</h2></div>
+			<div class="box"><h2>3</h2></div>
+			<div id="box4" class="box"><h2>4</h2></div>
+
+
+		</div>
+	</body>
+</html>

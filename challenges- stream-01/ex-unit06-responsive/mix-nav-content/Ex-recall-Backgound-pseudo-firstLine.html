@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Box Model</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<style type="text/css">
+		body{
+			/*background-image: url(img/code.jpg);
+			background-size: cover;*/
+			background-color: #292E37;
+		}
+
+			#container
+			{
+				margin-right:auto; 
+				margin-left:auto;
+				position: relative;		
+				width:960px;	
+				border-radius: 10px;
+				padding: 10px;
+				/*padding-top: 200px;*/    /*Remove to padding*/
+				font-size: 0; 
+				
+			}
+			.box{
+				position: relative;		
+				width: 100%;
+				margin-bottom: 10px;
+				border-radius: 10px;
+				font-family: Roboto;
+				font-size: 20px;
+				text-align: center;
+				padding: 10px 0;
+				color: white;
+
+			}
+								
+			.sidebar{
+				box-sizing:border-box;
+				display: inline-block;
+				width:470px;
+				margin-right: 10px;
+				padding-left: 10px;
+				padding-right: 10px;
+				/*background-color: #81BBC9;*/
+				background-color: rgba(129,187,201,.7);
+
+			}
+
+			.content{
+				box-sizing:border-box;
+				display: inline-block;
+				width:470px;
+				margin-left: 10px;
+				padding-left: 10px;
+				padding-right: 10px;
+				/*background-color: #81BBC9;*/
+				background-color: rgba(129,187,201,.7);
+
+			}
+			#toTopRight{
+				position: absolute; 	/* Absolute Link */
+				bottom:0;				/* Offset however we wish*/
+				right:-80px;
+			}
+			#toTopLeft{
+				position: absolute; 	/* Absolute Link */
+				bottom:0;				/* Offset however we wish*/
+				left:-80px;
+			}
+			p{
+				padding-bottom: 50px;
+				line-height: 1.4em;
+				font-size: 1.2em;
+
+			}
+			h2{
+				font-size: 2em;
+				margin:40px 0px;
+			}
+			p::first-line {
+			     font-weight: bold;
+			     font-size: 1.2em;
+			}
+			h1{
+				margin:40px 0px;
+				font-size: 60px;
+			}
+			nav ul li a {
+		    display: block;
+		    text-decoration: none;
+		    font-family: roboto;
+		    color: #fff;
+			}
+			nav ul {
+				background-color: #1D2026;
+			    list-style: none;
+			    text-align: center;
+			}
+
+			nav ul li {
+			     font-size:30px;
+			     border-bottom: 1px solid #444;
+			     padding: 10px 5px;
+			     background-color: #1D2026;
+			}
+			nav ul li:hover {
+			     background-color: #555;
+			     transition: all .3s ease;
+			}
+			 nav ul li:active{					
+				background-color:white;		/*add active pseudo-class*/
+			}
+			li:last-of-type{
+				border-bottom: 0;
+			}
+			/*li:first-of-type{
+				 background-color: #2D3545;
+			}*/
+			
+			@media screen and (min-width: 665px) {
+			    nav {
+			        font-size: 0;
+			    }
+
+			    nav ul li {
+			        display: inline-block;
+			        width: 120px;
+			        font-size: 20px;
+			        border-bottom: none;
+			   } 
+			}
+
+
+			@media screen and (min-width: 2400px){   /* min-width for desktop */
+		         p{
+				  font-size: 20px;
+
+			    }
+			   .box{
+				  text-align: left;
+		          background-color:#eee;
+		          border-color: white;
+			    }
+			    
+		   }
+
+			
+		</style>
+	</head>
+	<body>
+		<nav>
+		  <ul>
+		     <li><a href="#">Home</a></li>
+		     <li><a href="#">About</a></li>
+		     <li><a href="#">Portfolio</a></li>
+		     <li><a href="#">Blog</a></li>
+		     <li><a href="#">Contact</a></li>
+		  </ul>
+		</nav>
+		<div id="container">
+			
+			<div id="header" class="box"> <h1>CHOCOBLOCK</h1>
+			</div>
+			<div class="box sidebar">
+				<h2>Sidebar</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p>
+			
+			</div>
+			<div class="box content">
+				<h2>Content</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p>
+				
+			</div>
+			<div class="box sidebar">
+				<h2>Sidebar</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p>
+			
+			</div>
+			<div  class="box content">
+				<h2>Content</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p>
+				<a href="#" alt="Link to top"><img id="toTopRight" src="img/arrow.png"></a>
+			</div>
+			<div id="footer" class="box"><h2>Footer</h2>
+			</div>
+
+		</div>
+	</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Floating Frog</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<style>
+		body {
+			font-family: roboto, sans-serif;
+		}
+		#outer {
+			margin: auto;
+			width: 850px;
+			font-size: 0;
+		}
+		#outer div {
+			display: inline-block;
+			vertical-align: top;
+			width: 400px;
+			padding: 10px;
+			background-color: #99ccff;
+			border: 2px solid black;
+			border-radius: 10px;
+			font-size: 12px;
+		}
+		#box01 {
+			float: right;
+			-webkit-filter: grayscale(1) blur(1px) opacity(.3);
+		}
+		#box02 {
+			float: left;
+			-webkit-filter: sepia(1);
+		}
+		#box03 {
+			float: right;
+			-webkit-filter: hue-rotate(135deg) saturate(5);
+		}
+		#box04 {
+			float: left;
+			-webkit-filter: hue-rotate(180deg);
+		}
+		#box05 {
+			float: right;
+			-webkit-filter: brightness(2);
+		}
+		#box06 {
+			float: left;
+			-webkit-filter: contrast(6) hue-rotate(225deg);
+		}
+		
+		img {
+			 margin: 0 25px 25px 25px;
+		}
+
+		</style>
+	</head>
+	<body>
+		<div id="outer">
+			<div>
+				<h2>Froggy</h2>
+				<img id="box01" src="img/frog.jpg" width="250px" height="250px" alt="Frog"/>
+			</div>
+			<div>
+				<h2>Owl</h2>
+				<img id="box02" src="img/owl.jpg" width="250px" height="250px" alt="Owl"/>
+			</div>
+			<div>
+				<h2>Froggy</h2>
+				<img id="box03" src="img/frog.jpg" width="250px" height="250px" alt="Frog"/>
+			</div>
+			<div>
+				<h2>Owl</h2>
+				<img id="box04" src="img/owl.jpg" width="250px" height="250px" alt="Owl"/>
+			</div>
+			<div>
+				<h2>Froggy</h2>
+				<img id="box05" src="img/frog.jpg" width="250px" height="250px" alt="Frog"/>
+			</div>
+			<div>
+				<h2>Owl</h2>
+				<img id="box06" src="img/owl.jpg" width="250px" height="250px" alt="Owl"/>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+

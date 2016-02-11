@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="UTF-8">
+      <title>Form</title>
+      <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+   
+      <!--
+         Form with HTML5 tags and basic CSS
+      -->
+      <style type="text/css">
+
+         body{
+            font-family: 'Roboto', sans-serif;
+         }
+         
+         #container{
+            width: 550px;
+            margin: auto;
+
+         }
+
+         legend{
+            font-size: 30px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid #999;
+            padding: 4px 15px;
+         }
+            
+         label.field{
+            display: block;
+            text-align: right;
+            width: 100px;
+            float: left;
+         }
+         input{
+            width: 200px;
+            border-radius: 5px;
+            padding: 7px 8px;
+         }
+         .field{
+            padding: 6px 8px;
+         }
+
+         #zodiac{
+             width: 220px;
+             border-radius: 5px;
+             padding: 7px 8px;
+         }
+
+         fieldset{
+            width: 450px;
+            border: 1px solid #999;
+            border-radius: 20px;
+            clear: both;
+            padding: 20px;
+            margin-bottom: 100px;
+            background-color:rgba(129, 187, 201,.2);
+
+         }
+         :focus{
+            background-color: #FFECE9;
+         }
+         
+         input[type=checkbox]:not(old),
+         input[type=radio   ]:not(old){
+            width: 25px;
+            border-radius: 0;
+            padding: 7px 8px;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="container">
+         <fieldset>
+            <legend>Registration</legend>
+            <form id="form" method="POST" action="#">
+               <label class="field" for="FirstName">First name*: </label>
+               <input id="FirstName" type="text" name="FirstName" required="" autofocus autocomplete="on" placeholder="Enter your first name here"/>
+               
+               <label class="field" for="password">Password: </label>
+               <input id="password" type="password" name="password" placeholder="Minimum 8 characters"/>
+               
+               <label class="field" for="email">Email*: </label>
+               <input id="email" type="email" name="email" required="" autocomplete="on" placeholder="Enter your email here"/>
+               
+               <label class="field" for="tel">Tel: </label>
+               <input id="tel" type="tel" name="tel" placeholder="Enter your telephone number" pattern="[0-9]{11}" title="Eleven digits"/>
+               
+               <label class="field" for="website">Website: </label>
+               <input id="website" type="url" name="website" placeholder="Enter a website address here"/>
+               
+               <label class="field" for="passport">Passport #: </label>
+               <input name="passport" type="text" pattern="[0-9]{7}[A-Za-z]{1}" title="Seven numbers followed by a single upper or lowercase letter"/>
+               
+               <label class="field" for="postcode">Postcode: </label>
+               <input mane="postcode" type="text" pattern="[A-Za-z]{2}[0-9]{3}[A-Za-z]{2}" title="Use this format AA112BB"/>
+               
+               <label class="field" for="credit-card">Credit card #: </label>
+               <input name="credit-card" type="number" placeholder="Enter your credit card #" pattern="[0-9]{16}" title="16 digits"/>
+               
+               <label class="field" for="age">Age: </label>
+               <input name="age" type="number" min="0" max="150" placeholder="Enter your age" title="Must be a number less than 151"/>
+               
+               <label class="field" for="date">Date: </label>
+               <input name="date" type="date"/>
+               <br /><br />
+               
+               <label for="course">Course: </label>
+               <input name="course" type="checkbox" value="Starter"/>
+               <label for="course">Starter</label>
+               <input name="course" type="checkbox" value="Main"/>
+               <label for="course">Main</label>
+               <input name="course" type="checkbox" value="Dessert"/>
+               <label for="course">Dessert</label>
+               <br />
+               
+               <label for="gender">Gender: </label>
+               <input name="gender" type="radio" value="Male"/>
+               <label for="gender">Male</label>
+               <input name="gender" type="radio" value="Female"/>
+               <label for="gender">Female</label>
+               <input name="gender" type="radio" value="Other"/>
+               <label for="gender">Other</label><br /><br />
+
+               <label class="field" for="zodiac">Zodiac signs: </label>
+               <select name="zodiac" id="zodiac">
+                  <optgroup label="Sun">
+                     <option value="sun01">Sun 1</option>
+                     <option value="sun02">Sun 2</option>
+                  </optgroup>
+                  <optgroup label="Earth">
+                     <option value="earth01">Earth 1</option>
+                     <option value="earth02">Earth 2</option>
+                  </optgroup>
+                  <optgroup label="Wind">
+                     <option value="wind01">Wind 1</option>
+                     <option value="wind02">Wind 2</option>
+                  </optgroup>
+                  <optgroup label="Fire">
+                     <option value="fire01">Fire 1</option>
+                     <option value="fire02">Fire 2</option>
+                  </optgroup>
+               </select>
+               
+               <label class="field" for="genres">Music Genre: </label>
+               <input list="genres" name="genres">
+                  <datalist id="genres">
+                     <option value="Pop">
+                     <option value="Rock">
+                     <option value="Country">
+                     <option value="Thrash">
+                     <option value="Gothic">
+                     <option value="Glam rock">
+                  </datalist>
+
+               <label class="field" for="day-score">Score day: </label>
+               <input name="day-score" type="range" min="0" max="11"/>
+               
+               <label class="field" for="submit"></label>
+               <input type="submit" name="submit" value="Submit"/>
+            </form>
+         </fieldset>
+    </div>
+   </body>
+
+</html>

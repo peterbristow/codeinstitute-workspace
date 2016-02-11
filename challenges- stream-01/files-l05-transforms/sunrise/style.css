@@ -1,0 +1,139 @@
+#upper {
+    animation-name: bgsky;
+    animation-duration: 12s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes bgsky {
+    0% {
+        background-color: #00001a;
+    }
+    25% {
+    	background-color: skyblue;
+    }
+    50% {
+    	background-color: skyblue;
+    }
+    75% {
+    	background-color: #FF2A06;
+    }
+    100% {
+        background-color: #000;
+    }
+}
+
+#lower {
+    animation-name: bggrass;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes bggrass {
+    0% {
+        background-color: #001a00;
+    }
+    33% {
+    	background-color: #5cd65c;
+    }
+    66% {
+    	background-color: #5cd65c;
+    }
+    100% {
+        background-color: #061306;
+    }
+}
+
+#sun {
+    animation-name: sunrise;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes sunrise {
+	0% {
+		bottom: -100px;
+		left: 1000px;
+		background: #f00;
+	}
+	25% {
+		bottom: 300px;
+		left: 750px;
+		background: #ffd630;
+	}
+	50% {
+		bottom: 350px;
+		left: 500px;
+		background: #ffd630;
+	}
+	75% {
+		bottom: 300px;
+		left: 250px;
+		background: #ffd630;
+	}
+	100% {
+		bottom: -100;
+		left: 60px;
+		background: #f00;
+	}
+}
+
+#moon {
+    animation-name: moonrise;
+    animation-duration: 5s;
+    animation-delay: 7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes moonrise {
+	0% {
+		bottom: -100px;
+		left: 60px;
+		background: transparent;
+	}
+	100% {
+		bottom: 350px;
+		left: 60px;
+		background: #fff;
+	}
+}
+
+#container {
+	width: 80%;
+	height: 600px;
+	margin: 0 auto;
+}
+#upper {
+    height: 80%;
+    position: relative;
+    z-index: 1;
+}
+#lower {
+    height: 20%;
+    background-color: #061306;
+    position: relative;
+    z-index: 10;
+}
+#sun {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -100px;
+    left: 20px;
+    z-index: 5;
+}
+#moon {
+	width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -100px;
+    left: 60px;
+    z-index: 5;
+}
+

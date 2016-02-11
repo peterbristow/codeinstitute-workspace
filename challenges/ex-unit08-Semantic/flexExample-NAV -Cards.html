@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Flexbox</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="reset.css">
+		<style type="text/css">
+		nav{
+			font-family: roboto;
+			/*background-color: #eee;*/
+			color: #fff;
+			/*height: 500px;*/
+		}
+		ul{
+			width: 90%;
+			margin-left: auto;
+			margin-right: auto;
+			display: flex;
+			justify-content:space-around;
+			flex-flow: row;
+			/*flex-flow: row-reverse;*/
+			/*justify-content:flex-end;*/
+			/*justify-content:space-around;*/
+			/*align-items:flex-start;*/
+			align-items:baseline;
+			border-radius: 10px;
+			list-style-type: none; /*Remove Bullets*/
+			padding: 0;	
+		}
+		li{
+			/*width:10%;*/
+			/*border:2px solid #000;*/
+			/*background-color: #81BBC9;*/
+			/*border-radius: 10px;*/
+			font-family: Dosis;
+			font-weight: 400;
+			padding:20px 20px 20px 20px;
+			text-align: center;
+			font-size: 1.3em;
+		}
+		#logoNav{
+			text-align: left;
+			font-size: 2em;
+			font-weight: bold;
+		}
+		
+		a{
+			flex:1;
+			text-decoration: none;
+			color: #fff;
+		}
+		a:first-child{
+			flex:6;
+		}
+		.content{
+			/*background-color: rgb(196, 50, 32);*/
+			background-color: #F5D76E;
+			height: 600px;
+
+		}
+		a:hover{
+			color:#eee;
+			tranition:all .5s ease;
+		}
+		#landing{
+			display: flex;
+			justify-content: space-around;
+			flex-wrap:wrap;
+			width: 80%;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		#full-page{
+			background-color: #fff;
+			width: 100%;
+			height: 400px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		#landing-message{
+			flex:1;
+			min-width: 300px;
+		}
+		#landing-graphic{
+			margin-top: 100px;
+			flex:1;
+			min-width: 300px;
+		}
+		#landing-image{
+			display: block;
+			width: 400px;
+			margin-right: auto;
+			margin-left: auto;
+
+			}
+		#landing-message h1{
+			text-align: center;
+			padding-top: 150px;
+			font-family: dosis;
+			font-weight: 300;
+			font-size: 3em;
+		}
+		h1{
+	font-size: 3em;
+	text-align: center;
+}
+h2{
+	font-size: 1em;
+	text-align: left;
+}
+p{
+	font-size: .9rem;
+}
+
+div{
+	border-radius: 4px;
+}
+
+		.card_image{
+	width: 100%;
+}
+.bottom_button{
+	display: flex;
+	box-sizing:border-box;
+	border-radius: 4px;
+	display: block;
+	width: 100%;
+	background-color:rgba(129, 187, 201,.85);
+	text-align: center;
+	padding: 1em .75em;
+	text-decoration: none;
+	color: #fff;
+
+}
+
+.card_bottom{
+	display: flex;
+	flex-flow:column;
+}
+.card_head{
+	flex:0;
+}
+.card_para{
+	flex:1 0 auto;
+}
+
+#container
+{
+	display: flex;		/* makes container a flexbox*/
+	flex-flow: row wrap; 	/* layout the boxes in rows and wrap them*/
+	box-sizing:border-box;
+	margin-right:auto;
+	margin-left:auto;
+	max-width:1050px;	
+}
+#logo{
+	width: 800px;
+	margin: auto;
+}
+
+.card{
+	flex:1; /* */
+	display: flex;	/* make the contents controllable by flexbox*/
+	flex-flow:column;	/* */
+	min-width: 240px; /**/
+	margin: 10px;
+	padding: 20px;
+	background-color: #fff;
+}
+
+		@media screen and (max-width: 700px){
+			ul{
+				flex-flow: column;
+				align-items:center;
+			}
+
+			li{
+				font-size: 2em;
+			}
+		}
+
+		</style>
+</head>
+<body>
+	<div class="content" >
+		<nav>
+			<ul>
+				<a href="#"><li id="logoNav">CODE INSTITUTE</li></a>
+				<a href="#"><li>Home</li></a>
+				<a href="#"><li>Projects</li></a>
+				<a href="#"><li>About</li></a>
+				<a href="#"><li>Contact</li></a>
+				<a href="#"><li>Photos</li></a>
+			</ul>
+		</nav>
+		<div id="landing">
+				<div id="landing-message"><h1>Make Creative Clever Fun Code. Simple.</h1></div>
+				<div id="landing-graphic"><img id="landing-image" src="img/laptop.png" alt="laptop" width="400"></div>
+		</div>
+
+	</div>
+	<div class="content">
+
+		<div id="full-page">			
+			<div id="landing-message"><h1>Make Creative Clever Fun Code. Simple.</h1></div>
+		</div>	
+	</div>
+	<div id="container">
+	<div class="card">
+			<img class="card_image"src="img/3.png">
+			<div class="card_bottom">
+				<h2 class="card_head">Remote learning</h2>
+				<p class="card_para">Once you join a Code Institute Bootcamp you will be taken on an accelerated contextualised learning path across 3 streams. Nothing is learned in isolation.We contextualise the content so that the knowledge and skills gained in each learning unit feeds into, and is expanded upon, within the next unit.The outputs of each stream will be a project. </p>
+				<a href="" class="bottom_button">Button</a>
+			</div>
+		</div>
+		<div class="card">
+			<img class="card_image"src="img/1.png">	
+			<h2 class="card_head">Open Evening</h2>
+			<p class="card_para">If you have questions about your career in coding or simply want to meet the Code Institute team, then come along to our next Careers Open Evening in Dublin</p>
+			<a href="" class="bottom_button">Button</a>
+		</div>
+
+		<div class="card">
+			<img class="card_image"src="img/2.png">
+			<h2 class="card_head">Web Info Session</h2>
+			<p class="card_para">If you have questions about your career in coding or simply want to meet the Code Institute team, then come along to our next Careers Open Evening in Dublin</p>
+			<a href="" class="bottom_button">Button</a>
+		</div>
+	</div>
+
+</body>
+</html>

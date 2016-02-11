@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Transforms</title>
+		<style type="text/css">
+
+		body{
+		background-color: #F2E29B;
+		}
+		div
+		{
+		padding: 40px;
+		width: 400px;
+		font-family: sans-serif;
+		font-size: xx-large;
+		text-align: center;
+
+		border:2px solid black;
+		border-top-left-radius: 25px;
+		border-top-right-radius:25px;
+
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 100px;
+		box-shadow: 10px 10px 5px #888888;
+		text-shadow: 10px 10px 5px #888888;
+
+		background: -moz-radial-gradient(center,rgba(41,10,89,.1) 1%,#f37c00 100%);
+		background: -webkit-radial-gradient(center,rgba(41,10,89,.1) 1%,#f37c00 100%);
+
+		-webkit-transition: all .3s ease-in-out;
+		-moz-transition: all .3s ease-in-out;
+		-ms-transition: all .3s ease-in-out;
+		transition: all .3s ease-in-out;
+
+		}
+		.rotateMe{
+		/*transform:rotate(45deg);
+		-webkit-transform:rotate(45deg);*/
+		}
+		.translateMe{
+		transform:translate(200px,100px);
+		-webkit-transform:translate(200px,100px);
+		}
+		.scaleMe{
+		/*transform:scale(2);
+		-webkit-transform:scale(2);*/
+		}
+		.skewMe{
+		transform:skew(20deg,20deg);
+		-webkit-transform:skew(20deg,20deg);
+		}
+
+		.rotateMe:hover{
+		transform:rotate(45deg);
+		-webkit-transform:rotate(45deg);
+		-webkit-transition: all .3s ease-in-out;
+		-moz-transition: all .3s ease-in-out;
+		-ms-transition: all .3s ease-in-out;
+		transition: all .3s ease-in-out;
+		}
+		
+		.scaleMe:hover{
+		transform:scale(2);
+		-webkit-transform:scale(2);
+		-webkit-transition: all .3s ease-in-out;
+		-moz-transition: all .3s ease-in-out;
+		-ms-transition: all .3s ease-in-out;
+		transition: all .3s ease-in-out;
+		}
+		
+		
+		</style>
+	</head>
+	<body>
+		<div>A box with Gradient</div>
+		<div class="rotateMe">I am Rotated</div>
+		<div class="translateMe">I am translated</div>
+		<div class="scaleMe">I am scaled</div>
+		<div class="skewMe">I am skewed</div>
+	</body>
+</html>
