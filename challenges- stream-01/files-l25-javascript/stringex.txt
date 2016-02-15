@@ -1,0 +1,20 @@
+
+//string functions
+//add two strings
+var string3 = "Code " + "institute";
+console.log(string3);
+var profile = "Sean at the Code Institute";
+console.log(profile.toLowerCase());
+console.log(profile.toUpperCase());
+//split a string into an array of words
+var words = profile.split(" ");
+console.log(words);
+console.log(profile.replace("Code ","Code-"));
+//search for a word, return its position in string
+console.log(profile.search("Code"));
+//extract string at position to end of string
+var newProfile = profile.slice(4);
+console.log(newProfile);
+//extract string at position to new position
+var newProfile = profile.slice(12,16);
+console.log(newProfile);
