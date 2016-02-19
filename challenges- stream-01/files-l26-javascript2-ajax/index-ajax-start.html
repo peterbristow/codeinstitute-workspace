@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AJAX Example</title>
+</head>
+<body>
+<h1>Hello This is JQuery AJAX</h1>
+<a href="#" onclick="return getMovie(206647);"> Show Movie Details </a><br/><br/>
+<div id="output">waiting for action</div><br/><br/>
+Movie Overview: <div id="overview">waiting for details</div>
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+function getMovieById(id) {
+	var dfd = new $.Deferred();
+    $.ajax({
+        url:"https://api.themoviedb.org/3/movie/"+id+"?api_key=35e16679c616a21b9ddebb66272c5902",
+         dataType: "json",
+        complete: function (response) {  
+			console.log(response);
+            var movie = response.responseJSON;
+			return dfd.resolve( movie );
+        },
+        error: function () {
+			return dfd.reject( "error on ajax call" );
+        },
+    });
+    return dfd.promise();;
+}
+function getMovie(id) {
+	getMovieById(id).then(function(movie) {
+	        //getMovieById finished process results.
+			//better as we've removed dependency on html
+			//need to stringify to display results.
+			$('#output').html(JSON.stringify(movie));
+            $('#overview').html(movie.overview);		
+	},
+	function(message) {
+		 $('#output').html('Bummer: there was an error! ' + message);
+	}
+	);
+}
+// A $( document ).ready() block.
+$( document ).ready(function() {
+    console.log( "ready!" );
+	 
+});
+</script>
+</html>
