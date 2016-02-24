@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My Angular App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  </head>
+  <style type="text/css">
+    input.ng-invalid {
+      border: 1px solid red;
+    }
+    input.ng-valid {
+      border: 1px solid green;
+    }
+  </style>
+  <body ng-app="MyApp">
+    <div ng-controller="FormController">
+      <form name="myForm" ng-submit="submit()" novalidate>
+        <label>Firstname</label>
+        <input name="firstname" type="text" ng-model="user.firstname" required/>
+        <label>Lastname</label>
+        <input name="lastname" type="text" ng-model="user.lastname" ng-pattern="/^(([aA-zZ]){1,})$/" required/>
+        <label>Age</label>
+        <input name="age" type="number" ng-model="user.age" minlength="{1}" maxlength="{3}" required/>
+        <br>
+        <button ng-disabled="myForm.$invalid" class="btn">Submit</button>
+      </form>
+  
+      User Model: {{ user }}
+      <br>
+      Form was submitted: {{wasSubmitted}}
+      <br>
+      Firstname input valid: {{myForm.firstname.$valid}}
+      <br>
+      Lastname input valid: {{myForm.lastname.$valid}}
+      <br>
+      Age input valid: {{myForm.age.$valid}}
+      <br>
+      Form valid: {{myForm.$valid}}
+    </div>
+  </body>
+  <script src="javascript/app.js"></script>
+  <script src="javascript/controller.js"></script>
+</html>

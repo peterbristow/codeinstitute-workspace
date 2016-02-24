@@ -1,0 +1,102 @@
+.main {
+    position: relative;
+    width: 680px;
+    margin: 0 auto;
+}
+
+.view {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    display: inline-block; /* Why is this needed? */
+    border: 10px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+}
+
+.view .mask {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    overflow: hidden; /* Why is this needed? */
+    top: 0px;
+    left: 0px;
+}
+
+.view h2 {  /* what does this message (i) mean? */
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);  /* what does this message mean? */
+    margin: 20px 0 0 0;
+}
+
+.view p {
+    font-family: georgia serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center;
+}
+
+.view a.info {
+    display: inline-block; /* Why is this needed? */
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+}
+
+.view a.info:hover {
+    box-shadow: 1px 1px 2px #000;
+}
+
+/*  Why did the person make '.view-first ***'  when they could have used '.view ***' instead */
+/*  Is it good practice to keep transition styles separate from normal styling? */
+.view-first .mask {
+    opacity: 0;
+    background-color: rgba(219, 127, 8, 0.7);
+    transition: all 0.4s ease-in-out;
+}
+
+.view-first h2 {  /* what does this warning mean? */
+    transform: translateY(-100px);
+    transition: all 0.2s ease-in-out;
+}
+
+.view-first p {
+    transform: translateY(120px);
+    transition: all 0.2s linear;
+}
+
+.view-first:hover img {
+    transform: scale(1,1); /* Why is this needed?  Cos it works without it. */
+}
+
+.view-first:hover .mask {
+    opacity: 1;
+}
+
+.view-first:hover h2, .view-first:hover p, .view-first:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+/* Could I just add 0.1s to the end of line 79 and remove this piece of stying? */
+.view-first:hover p {
+    transition-delay: 0.1s;
+}
+
+.view-first a.info:hover {
+    transition-delay: 0.2s;
+}

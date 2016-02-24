@@ -1,0 +1,9 @@
+/* overriding bootstrap */
+.navbar {
+   margin-bottom: 50px;
+   border-radius: 0px;
+}
+.navbar-inverse{
+	background-color: pink;
+}
+

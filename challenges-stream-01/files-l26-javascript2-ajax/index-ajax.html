@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AJAX Example</title>
+</head>
+<body>
+<h1>Hello This is JQuery AJAX</h1>
+<a href="#" id='movielist'> Show Movie List </a> <br/> 
+<a href="#" id='moviedetails'> Show Movie Details </a>
+<div id="output">waiting for Movie List</div>
+<div id="overview">waiting for details</div>
+</body>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+// handles the click event, sends the query
+function getMovies() {
+    $.ajax({
+        url:"https://api.themoviedb.org/3/movie/popular?page=1&api_key=35e16679c616a21b9ddebb66272c5902",
+         dataType: "json",
+        complete: function (response) {
+			console.log(response);
+            $('#output').html(response.responseText);
+        },
+        error: function () {
+            $('#output').html('Bummer: there was an error!');
+        },
+    });
+    return false;
+}
+// handles the click event, sends the query
+function getMovieById(id) {
+    $.ajax({
+        url:"https://api.themoviedb.org/3/movie/"+id +"?api_key=35e16679c616a21b9ddebb66272c5902",
+         dataType: "json",
+        complete: function (response) {
+			console.log(response);
+            $('#output').html(response.responseText);
+            var movie = $.parseJSON(response.responseText);
+            $('#overview').html(movie.overview);
+        },
+        error: function () {
+            $('#output').html('Bummer: there was an error!');
+        },
+    });
+    return false;
+}
+// handles the click event, sends the query
+// A $( document ).ready() block.
+$(document).ready(function(){
+    $("#movielist").click(function(){
+        	getMovies();
+    });
+    $("#moviedetails").click(function(){
+        	getMovieById(206647);
+    });
+});
+</script>
+</html>

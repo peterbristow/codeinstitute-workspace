@@ -5,16 +5,8 @@
 
 ## Questions: ###
 
-1. 'files-l16/index-accordian.html' - Why won't it work when using lines 80 and 81 instead of 82 and 83?
-2. 'files-l05/hover-images': See css comments in style.css.
-3. 'files-l05/transforms.html' - Why does the vertical page scroll bar flicker when hovering out of box06?
-4. 'files-l05/css-prothole-images' - Please explain how this works. Also I don't understand the box-shadow part on line 31?
-5. Go over 'files-l06/css-page-transitions' project together. I don't understand the explanation given in the docs.
-6. Is there any reason why doing this piece css would be of use?   html{margin: 0 auto;} See Line 79 of 'files-l06/Text Formating In Action/text.html'
-7. Why do linked google fonts not display in any of the examples?
-8. 'files-l08/mobile-first-flexbox-semantics'.  Please critique this code and offer ideas to make everything completely fluid/responsive. E.g. Would a pro give padding a % or em value?
-9. Could we check my answer to the ux challenge is satisfactory: files-l10/ux-challenge.
-10. files-l24/json - not working.
+1. Cannot commit to github from cloud 9. How do I fix this?
+2. Advice for preparing for the end of stream project.  Also tips to produce the best end product.
 
 
 

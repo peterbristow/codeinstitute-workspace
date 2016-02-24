@@ -1,0 +1,41 @@
+<html ng-app='collegeApp'>
+  <head>
+    <title>My Angular App</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  </head>
+  <body>
+    <div ng-controller="StudentController">
+      <div>
+         {{ student.greeting() }}
+      </div>
+      <div ng-hide='results'>
+        <button ng-click='showResults()'>Show Results</button>
+      </div>
+      <div ng-show='results'>
+        <button ng-click='showResults()'>Hide Results</button>
+        <div ng-repeat="subject in student.subjects | orderBy: '-marks' "> <!-- use '-marks' for desc -->
+          <div ng-show='{{subject.marks > 74}}'>
+             A grade result for: {{subject.name}} = {{subject.marks}}
+          </div>
+        </div>
+      </div>
+      
+      <br /><br />
+      <form class="form-inline">
+        <input ng-model="query" type="text" placeholder="Filter by Subject" autofocus />
+      </form>
+       
+      <div ng-repeat="subject in student.subjects | filter: { name: query } | orderBy: 'marks'">
+        Result for: {{subject.name}} {{subject.marks}}
+      </div>
+      
+      <br /><br />
+      <div ng-repeat="subject in student.subjects | filter: aGradeFilter | orderBy: '-marks'">
+        A Grades for : {{subject.name}} = {{subject.marks}}
+      </div>
+  
+    </div>
+  </body>
+  <script src='javascript/app.js'></script>
+  <script src='javascript/controller.js'></script>
+</html>

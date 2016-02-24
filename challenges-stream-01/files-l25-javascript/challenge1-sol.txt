@@ -1,0 +1,14 @@
+var profile = "I am a web developer developing in html css and javascript";
+var stops = ["i","am","a","and"]; //words to be removed from profile
+
+var words = profile.split(" ");
+
+var newProfile = [];
+
+for (i=0;i<words.length;i++){
+   if (stops.indexOf(words[i].toLowerCase()) < 0) {
+       newProfile.push(words[i])
+   }
+       
+}
+console.log(newProfile);
