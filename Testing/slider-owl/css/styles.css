@@ -1,0 +1,11 @@
+html, body {
+    margin: 0px;
+    height: 100%;
+}
+
+#carousel {
+    height: 90%;
+    width: 100%;
+    background: red;
+    margin: 0 auto;
+}

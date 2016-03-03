@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Monkeys</title>
+        
+        <link rel="stylesheet" href="slider.css" type="text/css" />
+
+        <script type="text/javascript" src="angular.min.js"></script>
+
+    </head>
+    <body ng-app="MyApp" ng-controller="MainController">
+
+        <wallop-slider
+            data-images="images"
+            data-animation="rotate"
+            data-current-item-index="index"
+            data-on-previous="updateTsPrevious()"
+            data-on-next="updateTsNext()"
+            ></wallop-slider>
+          
+        <p>Current index: {{index}}</p>
+        
+        <p>On previous, update this timestamp {{tsPrevious}}</p>
+        <p>On next, update this timestamp {{tsNext}}</p>
+
+        <!--Modules-->
+
+        <!--Controllers-->
+        <script type="text/javascript" src="MainController.js"></script>
+        
+        <!--Directives-->
+        
+        <!--Services-->
+        
+    </body>
+</html>
