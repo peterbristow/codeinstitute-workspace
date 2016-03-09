@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--Bootstrap css-->
+        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" type="text/css" />
+    </head>
+    <body>
+
+        <section class="container">
+            <h2>Example</h2>
+            <div class="pull-left">Float an element to the left</div>
+            <div class="pull-right">Float an element to the right</div>
+            <div class="center-block" style="background-color:yellow;width:200px;">This div will be centered.</div>
+        </section>
+        
+        <section class="container-fluid">
+            <h1>Hello World!</h1>
+            <div class="row">
+                <div class="col-xs-6 col-sm-3" style="background-color:lavender;">
+                    Column 1<br>
+                    Resize the browser window to see the effect. Also try to remove the div clearfix line and see what happens.
+                </div>
+                <div class="col-xs-6 col-sm-3" style="background-color:lavenderblush;">Column 2</div>
+                <!-- Add clearfix for only the required viewport -->
+                <div class="clearfix visible-xs"></div>
+                <div class="col-xs-6 col-sm-3" style="background-color:lightcyan;">Column 3</div>
+                <div class="col-xs-6 col-sm-3" style="background-color:lightgray;">Column 4</div>
+            </div>
+        </section>
+        
+        <section class="container">
+            <h2>Example</h2>
+            <p>The .show class forces an element to be shown:</p>
+            <p class="show">This paragraph is forced to be shown.</p>
+            <p>The .hidden class forces an element to be hidden:</p>
+            <p class="hidden">This paragraph is forced to be hidden.</p>
+        </section>
+        
+        <section class="container">
+            <h2>Example</h2>
+            <p>The .sr-only class hides an element to all devices except screen readers:</p>
+            <a class="sr-only" href="#">Skip to main content</a>
+            <p>Combine .sr-only with .sr-only-focusable to show the element again when it is focused (e.g. by a keyboard-only user):</p>
+            <a class="sr-only sr-only-focusable" href="#">Skip to main content</a>
+        </section>
+        
+        <section class="container">
+            <h2>Example</h2>
+            <p>The .text-only class replaces an element's text content with a background image:</p>
+            <div class="text-hide">Some text inside a div element.</div>
+        </section>
+        
+        <section class="container">
+            <h2>Example</h2>
+            <p>The .close class indicates a close icon.</p>
+            <div style="padding:50px;width:400px;background-color:#f1f1f1;">
+                <span>The close icon floats to the right:</span>
+                <button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+        </section>
+        
+        <section class="container">
+            <h2>Example</h2>
+            <p>The .caret class indicates dropdown functionality and direction: <span class="caret"></span></p>
+            <p>The .caret class used on a button:</p>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Menu <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">A link</a></li>
+                    <li><a href="#">Another link</a></li>
+                    <li><a href="#">Something else here</a></li>
+                </ul>
+            </div> 
+        </section>
+        
+        <section class="container">
+            <h2>Example</h2>
+            <p>Resize this page to see how the text below changes:</p>
+            <h1 class="visible-xs">This text is shown only on an EXTRA SMALL screen.</h1>
+            <h1 class="visible-sm">This text is shown only on a SMALL screen.</h1>
+            <h1 class="visible-md">This text is shown only on a MEDIUM screen.</h1>
+            <h1 class="visible-lg">This text is shown only on a LARGE screen.</h1>
+        </section>
+        
+        <section class="container">
+            <h2>Image</h2>
+            <p>The .img-rounded class adds rounded corners to an image (not available in IE8):</p>            
+            <img src="img/cinqueterre.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236"> 
+        </section>
+        
+        <section class="container">
+            <h2>Image</h2>
+            <p>The .img-circle class shapes the image to a circle (not available in IE8):</p>            
+            <img src="img/cinqueterre.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236"> 
+        </section>
+        
+        <section class="container">
+            <h2>Image</h2>
+            <p>The .img-thumbnail class creates a thumbnail of the image:</p>            
+            <img src="img/cinqueterre.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"> 
+        </section>
+        
+        <section class="container">
+            <h2>Image</h2>
+            <p>The .img-responsive class makes the image scale nicely to the parent element (resize the browser window to see the effect):</p>                  
+            <img src="img/cinqueterre.jpg" class="img-responsive" alt="Cinque Terre" width="304" height="236"> 
+        </section>
+        
+        <section class="container">
+            <h2>Image</h2>
+            <p>The .img-responsive class makes the image scale nicely to the parent element (resize the browser window to see the effect):</p>                  
+            <img src="img/cinqueterre.jpg" class="img-circle img-responsive" alt="Cinque Terre" width="304" height="236"> 
+        </section>
+
+        <!--jquery library-->
+        <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+        <!--Bootstrap javascript-->
+        <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    </body>
+</html>

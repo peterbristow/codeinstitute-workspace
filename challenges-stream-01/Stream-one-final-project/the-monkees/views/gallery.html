@@ -1,0 +1,11 @@
+<div class="container">
+    <h1>{{ pageTitle }}</h1>
+
+    <ul>
+        <li ng-repeat="item in images">
+            <a ng-click="openLightboxModal($index)">
+                <img ng-src="{{item.url}}" alt="{{item.alt}}" class="img-thumbnail">
+            </a>
+        </li>
+    </ul>
+</div>
